@@ -44,6 +44,8 @@ Page({
     if (!searchValue.length) {
       this.setData({ suggestsongs: [] });
       this.setData({ resultSongs: [] });
+      //解决在防抖的情况下下面的请求拿到上一次结果的bug
+      debounceGetSearchSuggest.cancel()
       return;
     }
     debounceGetSearchSuggest(searchValue).then((res) => {
