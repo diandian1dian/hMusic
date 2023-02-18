@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "song-menu-item": "/components/song-menu-item/index"
+  }
+}

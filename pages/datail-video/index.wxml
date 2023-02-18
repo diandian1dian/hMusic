@@ -1,2 +1,12 @@
-<!--pages/datail-video/index.wxml-->
-<text>pages/datail-video/index.wxml</text>
+<video 
+  class="video"
+  src="{{mvUrlInfo.url}}"
+  danmu-list="{{danmuList}}" 
+  referrer-policy="origin"
+  autoplay
+  loop>
+  </video>
+
+  <block wx:for="{{100}}" wx:key="*this">
+    <view>{{item}}</view>
+  </block>

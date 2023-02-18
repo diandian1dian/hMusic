@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:4000/'
+const BASE_URL = 'http://192.168.10.15:4000'
 class HRequest{
  request(url, method, param){
    return new Promise((resolve, reject)=>{
@@ -23,5 +23,5 @@ class HRequest{
    return this.request(url,"POST", data)
  }
 }
-
-export default HRequest
+const hRequest = new HRequest()
+export default hRequest

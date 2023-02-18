@@ -2,8 +2,9 @@
   "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
   "projectname": "HMusic",
   "setting": {
-    "compileHotReLoad": true,
-    "urlCheck": false
+    "compileHotReLoad": false,
+    "urlCheck": false,
+    "useIsolateContext": false
   },
   "condition": {
     "miniprogram": {
@@ -21,9 +22,23 @@
           "query": "id=14605638",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "detail-songs",
+          "pathName": "pages/detail-songs/index",
+          "query": "id=6928264661&type=menu",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "搜索页面",
+          "pathName": "pages/detail-search/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
   },
-  "libVersion": "2.28.1"
+  "libVersion": "2.29.0"
 }

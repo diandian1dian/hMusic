@@ -1,7 +1,6 @@
 // pages/home-video/index.js
-import HRequest from '../../service/index'
+import hRequest from '../../service/index'
 import {getTopMV} from '../../service/api_video'
-const hRequest = new HRequest()
 
 Page({
 

@@ -2,11 +2,15 @@
   "pages": [
     "pages/home-music/index",
     "pages/home-video/index",
-    "pages/datail-video/index"
+    "pages/datail-video/index",
+    "pages/detail-search/index",
+    "components/area-header/index",
+    "pages/detail-songs/index",
+    "pages/music-player/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#fafafa",
     "navigationBarTitleText": "HMusic",
     "navigationBarTextStyle": "black"
   },
