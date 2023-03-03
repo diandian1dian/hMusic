@@ -36,6 +36,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "播放器",
+          "pathName": "pages/music-player/index",
+          "query": "id=1997438791",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

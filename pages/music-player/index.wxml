@@ -1,2 +1,27 @@
 <!--pages/music-player/index.wxml-->
-<text>pages/music-player/index.wxml</text>
+<image class="bg-image" src="{{musicDetail.al.picUrl}}" mode="aspectFill"></image>
+<view class="bg-cover"></view>
+<!-- 2.导航 -->
+<nav-bar bind:click="handleBackBtnClick">
+  <view slot="title" class="tab">
+    <view class="{{currentPage === 0 ? 'active': ''}}">歌曲</view>
+  </view>
+</nav-bar>
+<!-- 3.封面 -->
+<view class="content">
+  <view class="album">
+    <image class="al-image" src="{{musicDetail.al.picUrl}}" mode="aspectFill"></image>
+  </view>
+  <view class="info">
+      <view class="title">{{musicDetail.name}}</view>
+      <view class="subtitle">
+        <view class="singer">{{musicDetail.ar[0].name}}</view>
+        <view class="alias">专辑: {{musicDetail.al.name}}</view>
+      </view>
+    </view>
+
+    <view class="lyric">{{currentLyricText}}</view>
+</view>
+<view >不往下画了...直接听歌吧</view>
+
+

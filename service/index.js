@@ -1,4 +1,4 @@
-const BASE_URL = 'http://192.168.10.15:4000'
+const BASE_URL = 'http://192.168.10.40:4000'
 class HRequest{
  request(url, method, param){
    return new Promise((resolve, reject)=>{

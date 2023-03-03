@@ -1,1 +1,65 @@
 /* pages/music-player/index.wxss */
+page{
+  color: #fff
+}
+.bg-image, .bg-cover{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1
+}
+.bg-cover{
+  background-color: rgba(0,0,0,.5);
+  backdrop-filter: blur(50px);
+}
+/* 自定义导航 */
+.tab {
+  display: flex;
+  font-size: 28rpx;
+  color: #999;
+}
+.content{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 30rpx 60rpx;
+}
+.album{
+  display: flex;
+  align-items: center;
+  flex:5;
+}
+.album image{
+  width: 100%;
+  border-radius: 12rpx;
+}
+.content .info {
+  margin: 20rpx 0;
+}
+
+.content .info .title {
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.content .info .singer, .content .info .alias {
+  font-size: 26rpx;
+  color: #ccc;
+  margin: 16rpx 0;
+}
+.btn-pause{
+  width: 60rpx;
+  height: 60rpx;
+}
+.lyric{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 28rpx;
+  color: #0f0;
+}
